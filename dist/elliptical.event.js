@@ -1,16 +1,11 @@
-
 /*
  * =============================================================
- * elliptical.Event v0.9
+ * elliptical.Event
  * =============================================================
- * Copyright (c) 2014 S.Francis, MIS Interactive
- * Licensed MIT
  *
- * Simple environment-independent Events/Pubsub implementation. Code culled in part from:
+ * environment-independent Events/Pubsub implementation. Code culled in part from:
  * https://github.com/federico-lox/pubsub.js
  *
- * Dependencies:
- * none
  *
  */
 
@@ -26,11 +21,11 @@
         define([], factory);
     } else {
         // Browser globals (root is window)
-        root.elliptical.Event=factory();
+        root.elliptical.Event = factory();
         root.returnExports = root.elliptical.Event;
     }
 }(this, function () {
-    var Event={};
+    var Event = {};
     (function (context) {
 
 
@@ -83,8 +78,13 @@
                                 //executes callbacks in the order
                                 //in which they were registered
                                 for (x = 0; x < len; x += 1) {
+                                    try{
+                                        subs[x].apply(context, params);
 
-                                    subs[x].apply(context, params);
+                                    } catch (ex) {
+
+                                    }
+
                                 }
 
                                 //clear references to allow garbage collection
@@ -128,7 +128,7 @@
 
                     channels[channel].push(callback);
 
-                    return {channel: channel, callback: callback};
+                    return { channel: channel, callback: callback };
                 },
 
                 /*
@@ -182,15 +182,15 @@
                 },
 
                 /* list the channels */
-                list: function(callback){
-                    if(callback){
+                list: function (callback) {
+                    if (callback) {
                         callback(channels);
                     }
                 }
             };
         }
 
-        Event.init=init();
+        Event.init = init();
 
     }(this));
 
