@@ -1,6 +1,7 @@
 {
   "name": "elliptical-event",
   "description": "Elliptical Pub/Sub Library",
+  "version":"1.0.0",
   "main": "dist/elliptical.event.js",
   "authors": [
     "S. Francis"
