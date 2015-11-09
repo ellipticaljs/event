@@ -1,0 +1,22 @@
+{
+  "name": "elliptical-event",
+  "description": "Elliptical Pub/Sub Library",
+  "main": "dist/elliptical.event.js",
+  "authors": [
+    "S. Francis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pub/sub",
+    "library"
+  ],
+  "homepage": "https://github.com/tachyon1337/elliptical-event",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
