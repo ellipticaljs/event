@@ -1,7 +1,7 @@
 {
   "name": "elliptical-event",
   "description": "Elliptical Pub/Sub Library",
-  "version":"1.0.2",
+  "version":"1.0.3",
   "main": "dist/elliptical.event.js",
   "authors": [
     "S. Francis"
@@ -11,13 +11,30 @@
     "pub/sub",
     "library"
   ],
-  "homepage": "https://github.com/tachyon1337/elliptical-event",
+  "homepage": "https://github.com/ellipticaljs/event",
   "moduleType": [],
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    ".gitignore",
+    ".npmignore",
+    "gulpfile.js",
+    "lib",
+    "docs",
+    "index.js",
+    "umd.js",
+    "package.json",
+    "demo",
+    "index.html",
+    "build.json",
+    "bundle.json",
+    ".nvmrc",
+    ".eslintrc",
+    "bin",
+    "CHANGELOG.md",
+    "demos"
   ]
 }

@@ -1,12 +1,12 @@
 {
     "name": "elliptical-event",
     "description": "Elliptical Pub/Sub Library",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "S. Francis",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tachyon1337/elliptical-event.git"
+        "url": "https://github.com/ellipticaljs/event.git"
     },
     "devDependencies": {
         "gulp": "^3.6.0",
