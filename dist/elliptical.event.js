@@ -21,6 +21,7 @@
         define([], factory);
     } else {
         // Browser globals (root is window)
+        root.elliptical=root.elliptical || {};
         root.elliptical.Event = factory();
         root.returnExports = root.elliptical.Event;
     }
